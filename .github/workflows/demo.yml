@@ -1,0 +1,12 @@
+name: Deploy panel dev env
+
+on: workflow_dispatch
+
+jobs:
+    deploy-dev-env:
+        name: Deploy development environment
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+            - name: Deploy dev env
+              run: echo "Deploying dev env"
