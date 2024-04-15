@@ -1,0 +1,13 @@
+name: Start
+
+on: workflow_dispatch
+
+jobs:
+    deploy-dev-env:
+        name: Some other workflow
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+            - name: Name of the step
+              run: echo "Saying something"
